@@ -2,7 +2,7 @@
 ---------------
 API는 라이브러리라고 부르기도 하는데, 프로그램 개발에 가주 사용되는 클래스 및 인터페이스의 모음을 말한다. 
 
-###API Document
+##API Document
 --------------------
 
 API 도큐먼트는 세개의 프레임으로 나뉘어져 있다. 
@@ -21,7 +21,7 @@ API 도큐먼트는 세개의 프레임으로 나뉘어져 있다.
 
 하단 부분 (필드, 생성자, 매소드 목록
 
-### java.lang / java.util
+##java.lang / java.util
 --------------------
 **java.lang**
 
@@ -34,12 +34,12 @@ API 도큐먼트는 세개의 프레임으로 나뉘어져 있다.
 
 : Array, Calender, Date,Object, StringTokenizer, Random
 
-###Object Class
+##Object Class
 -------------------
 
 클래스를 선언할 때 extends 키워드로 다른 클래스를 상속하지 않으면 암시적으로 java.lang.Object 클래스를 상속한다. 모든 자바 클래스는 Object의 자식이거나 자손 클래스이다. 
 
-###equals() (객체비교)
+##equals() (객체비교)
 --------------------
 Object 클래스의 equals() 메소드는 비교연산자인 ==과 동일한 결과를 리턴한다. 
 두 객체가 동일한 객체라면 true를 리턴하고 그렇지 않으면 false를 리턴한다.
@@ -70,8 +70,10 @@ public class MemberExample{
 	
 ```
 	
+
+
 	
-###hashCode() (객체 해쉬코드)
+##hashCode() (객체 해쉬코드)
 -----------------
 
  객체 해시코드란 객체를 식별할 하나의 정수 값을 말한다. Objectd의 hashCode() 메소드는 객체의 메모리 번지를 이용해서 해시 코드를 만들어 리턴하기 때문에 객체마다 다른 값을 가지고 있다. 
@@ -79,7 +81,8 @@ public class MemberExample{
 해시코드 값이 다르면 다른 객체로 판단하고 해시코드 값이 같으면 equals() 메소드로 다시 비교한다. 그렇기 때문에 hashCode() 메소드가 true가 나와도 equals()의 리턴 값이 다르면 다른 객체가 된다. 
 
 
-###toString() (객체 문자 정보)
+
+##toString() (객체 문자 정보)
 -----------------------
 Object 클래스의 toString()메소드는 객체의 문자 정보를 리턴한다. 
 
@@ -107,13 +110,16 @@ public class SmartPhone{
 }
 ```
 
-###Wapper Class
+
+##Wapper Class
 ----------
 
 자바는 기본 타입의 값을 갖는 개체를 생성할 수 있다. 이런 객체를 Wrapper 객체라고 하는데, 그 이유는 기본 타입의 값을 내부에 두로 포장하기 때문이다. 
 **포장 객체의 특징은 포장하고 있는 기본 타입 값은 외부에서 변경할 수 없다. 만약 내부의 값을 변경하고 싶다면 새로운 포장 객체를 만들어야한다**
 
-###Boxing(박싱) / Unboxing(언박싱)
+
+
+##Boxing(박싱) / Unboxing(언박싱)
 --------------
 Boxing : 기본 타입의 값을 포장 객체로 만드는 과정
 
